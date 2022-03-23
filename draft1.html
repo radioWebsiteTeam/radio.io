@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name ="viewport" content="width-device-width, initial-scale=1">
+<style>
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+        }
+
+      .navbar{
+        position:relative;
+        overflow:hidden;
+        background-color: black;
+      }
+
+      .navbar a{
+        display: inline-block;
+        text-align: center;
+        padding: 14px;
+        color:white;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bolder;
+      }
+
+      .navbar a.active{
+        background-color: black;
+        color: white;
+      }
+
+      .navbar-right{
+        float: right;
+      }
+
+      .navbar-centered a{
+        float:none;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+      }
+
+</style>
+</head>
+
+<body style="background-color:darkred;">
+
+  <div class="navbar">
+
+    <div class="navbar-centered">
+      <a class="active"> Ruido Radio Worldwide</a>
+    </div> <!-- end of center navbar options-->
+
+      <a> Ruido_Logo </a>
+      <!-- end of left navbar options-->
+
+    <div class="navbar-right">
+    <a >Home</a>
+    <a >About Us</a>
+    <a >Contact Info</a>
+  </div> <!-- end of right navbar options-->
+
+  </div> <!-- end of navbar -->
+
+
+
+</body>
+</html>
