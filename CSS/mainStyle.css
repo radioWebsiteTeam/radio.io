@@ -1,0 +1,54 @@
+﻿/*
+    @file mainStyle.css
+*/
+
+body
+{
+    background-color: darkred;
+    margin: 0%;
+}
+
+
+/*navigation*/
+li {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    border-bottom: 5px solid white;
+}
+
+li a {
+    height: 60px;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 14px 16px;
+    margin: 0%;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #393737;
+}
+
+/*image*/
+img {
+    padding-bottom: 10px;
+    height: 65px;
+    width: auto;
+}
+
+
+/*mobile*/
+@media screen and (max-width: 1400px){
+    li a {
+        font-size: 20px;
+    }
+}
