@@ -1,0 +1,4 @@
+===== NOTES =====
+- Spencer: Basic HTML and site structure
+	- Added support for CSS or BootStrap
+- Justin: Will go through and add BootStrap
