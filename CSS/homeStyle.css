@@ -1,3 +1,39 @@
-﻿body
-{
+﻿.musicSection {
+  display: flex;
+}
+
+.mainCard {
+  background-color: blue;
+  justify-content: center;
+  margin: auto;
+}
+
+.radioLogo {
+  height: 70vh;
+  width: 100vh;
+}
+
+.artistCard {
+  background-color: green;
+  width: 35%;
+}
+
+.artstPhotoPlaceholderImage {
+  background-color: black;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.artstPhotoPlaceholderImage p {
+  font-size: 60px;
+}
+
+.artistInfo {
+  background-color: purple;
+  text-align: center;
 }

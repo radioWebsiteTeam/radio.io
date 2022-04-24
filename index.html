@@ -4,87 +4,101 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <main>
-        <head>
-            <meta charset="utf-8"/>
-            <link rel="stylesheet" type="text/css" href="CSS/mainStyle.css">
-            <link rel="stylesheet" type="text/css" href="CSS/contactStyle.css">
-            
-            <title>Ruido Radio - Home</title>
+  <main>
+    <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="CSS/mainStyle.css" />
+      <link rel="stylesheet" type="text/css" href="CSS/contactStyle.css" />
+      <link rel="stylesheet" type="text/css" href="CSS/homeStyle.css" />
 
-            <meta name="description" content="< Description Goes Here >">
-        </head>
+      <title>Ruido Radio - Home</title>
 
-        <body>
-            <div class="showcase">
-                <header>
-                    <!--navigation-->
-                    <div class="navigation">
-                        <div class="container flex">
-                            <ul>
-                                <!--left-->
-                                <li style="float: left;">
-                                    <a id="placeholderImg" href="index.html"><img src="Pictures/radioLogo.png" 
-                                        alt="Ruido Radio Icon"></a>
-                                </li>
+      <meta name="description" content="< Description Goes Here >" />
+    </head>
 
-                                <!--center-->
-                                <li style="float: none; position: absolute; left: 45%">
-                                    <a id="placeholderImg" href="index.html"><img src="Pictures/radioTitle.png" 
-                                        alt="Ruido Radio Name Title"></a>
-                                </li>
+    <body>
+      <div class="showcase">
+        <header>
+          <!--navigation-->
+          <div class="navigation">
+            <div class="container flex">
+              <ul>
+                <!--left-->
+                <li style="float: left">
+                  <a id="placeholderImg" href="index.html"
+                    ><img src="Pictures/radioLogo.png" alt="Ruido Radio Icon"
+                  /></a>
+                </li>
 
-                                <!--right-->
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="aboutUs.html">About Us</a></li>
-                                <li><a href="index.html">Home</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </header>
+                <!--center-->
+                <li style="float: none; position: absolute; left: 45%">
+                  <a id="placeholderImg" href="index.html"
+                    ><img
+                      src="Pictures/radioTitle.png"
+                      alt="Ruido Radio Name Title"
+                  /></a>
+                </li>
 
-                <!--Body Section For Music-->
-                <section>
-                    <div class="sectionContainer">
-                        <div class="textBox">
-                            <p class="chaptText"><strong>LISTEN LIVE</strong></p>
-                        </div>
-                        <div class="musicSection">
-                            <div class="mainCard">
-                                <div class="albumCover">
-                                    <div id="placeholderCover">
-                                        <a id="placeholderImg" href="#"><img src="Pictures/radio_logo.jpeg" 
-                                            alt="Ruido Radio Album Cover Placeholder Image"></a>
-                                    </div>
-                                </div>
-                                <div id="play"></div>
-                                <div id="pause"></div>
-                                <div id="songPosition"></div>
-                            </div>
-                            <div class="artistCard">
-                                <div id="placeholderPhoto">
-                                    <div id="artistsPhotoPlaceholder"></div>
-                                    <div id="artistsPhotoPlaceholderText">Artist<br>Photo</div>
-                                </div>
-                                <div class="artistInfo">
-                                    <p id="songNameText"><strong>SONG NAME</strong></p>
-                                    <p id="artistNameText"><strong>ARTIST NAME</strong></p>
-                                </div>
-                            </div>
-                            <div class="volumeCard">
-                                <div id="volume"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!--Footer (potential feature, may not implement)-->
-                <footer>
-                    <div class="footerContainer">
-
-                    </div>
-                </footer>
+                <!--right-->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+              </ul>
             </div>
-        </body>
-    </main>
+          </div>
+        </header>
+
+        <!--Body Section For Music-->
+        <section>
+          <div class="sectionContainer">
+            <div class="textBox">
+              <p class="chaptText"><strong>LISTEN LIVE</strong></p>
+            </div>
+
+            <div class="musicSection">
+              <div class="card mainCard">
+                <div class="albumCover">
+                  <div id="placeholderCover">
+                    <a id="placeholderImg" href="#"
+                      ><img
+                        src="Pictures/radio_logo.jpeg"
+                        alt="Ruido Radio Album Cover Placeholder Image"
+                        class="radioLogo"
+                    /></a>
+                  </div>
+                </div>
+                <div id="play"></div>
+                <div id="pause"></div>
+                <div id="songPosition"></div>
+              </div>
+
+              <div class="card artistCard">
+                <div id="placeholderPhoto">
+                  <div id="artistsPhotoPlaceholder"></div>
+                  <div
+                    class="artstPhotoPlaceholderImage"
+                    id="artistsPhotoPlaceholderText"
+                  >
+                    <p class="placeholderText">Artist<br />Photo</p>
+                  </div>
+                </div>
+                <div class="artistInfo">
+                  <p id="songNameText"><strong>SONG NAME</strong></p>
+                  <p id="artistNameText"><strong>ARTIST NAME</strong></p>
+                </div>
+              </div>
+              <div class="volumeCard">
+                <div id="volume"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Footer (potential feature, may not implement)-->
+        <footer>
+          <div class="footerContainer"></div>
+        </footer>
+      </div>
+    </body>
+  </main>
 </html>
