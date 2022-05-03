@@ -2,51 +2,157 @@
     @file mainStyle.css
 */
 
-body {
-  background-color: darkred;
-  margin: 0%;
-  color: white;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-/*navigation*/
-li {
-  float: right;
+main {
+  color: var(--textColorDark);
+}
+
+body {
+  line-height: 1.6;
+  background-color: darkred;
+}
+
+body {
+  background-color: darkred;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-  border-bottom: 5px solid white;
 }
 
-li a {
-  height: 60px;
-  display: block;
-  color: white;
-  text-align: center;
-  font-size: 40px;
-  padding: 14px 16px;
-  margin: 0%;
+a {
   text-decoration: none;
+  display: block;
 }
 
-li a:hover {
-  background-color: #393737;
+section {
+  background: var(--secondary-color);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-top: 80px;
 }
 
-/*image*/
-img {
-  padding-bottom: 10px;
+.showcase {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: darkred;
+}
+
+/* Header & Navigation */
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  z-index: 999;
+  background: black;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0;
+  padding: 0 50px;
+  border: 1px solid rgb(16, 12, 255); /* debug bounds */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(32, 255, 12); /* debug bounds */
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.nav .menuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: larger;
+  width: 120px;
+  height: 80px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.nav .menuItem:hover {
+  background-color: darkred;
+}
+
+#radioicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(32, 255, 12); /* debug bounds */
+}
+
+#radioicon img {
   height: 65px;
   width: auto;
 }
+/* Header & Navigation */
+
+/*image*/
+/* img {
+  padding-bottom: 10px;
+  height: 65px;
+  width: auto;
+} */
 
 /*mobile*/
+/* FHD+ (1080p & greater) desktop displays */
+@media(min-width: 1440px) {
+  .mobile-toggle {
+      display: none;
+  }
+}
+
 @media screen and (max-width: 1400px) {
-  li a {
-    font-size: 20px;
+  .nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    cursor: pointer;
+    border: 1px solid rgb(32, 255, 12); /* debug bounds */
+  }
+
+  .mobile-toggle .bar {
+    width: 75px;
+    height: 6px;
+    margin: 13px auto;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    background: white;
+  }
+
+  .mobile-toggle .bar {
+    display: block;
+    cursor: pointer;
   }
 }

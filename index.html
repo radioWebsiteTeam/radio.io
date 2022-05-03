@@ -8,7 +8,6 @@
     <head>
       <meta charset="utf-8" />
       <link rel="stylesheet" type="text/css" href="CSS/mainStyle.css" />
-      <link rel="stylesheet" type="text/css" href="CSS/contactStyle.css" />
       <link rel="stylesheet" type="text/css" href="CSS/homeStyle.css" />
 
       <title>Ruido Radio - Home</title>
@@ -18,19 +17,16 @@
 
     <body>
       <div class="showcase">
-        <header>
-          <!--navigation-->
+        <!-- <header>
           <div class="navigation">
             <div class="container flex">
               <ul>
-                <!--left-->
                 <li style="float: left">
                   <a id="placeholderImg" href="index.html"
                     ><img src="Pictures/radioLogo.png" alt="Ruido Radio Icon"
                   /></a>
                 </li>
 
-                <!--center-->
                 <li style="float: none; position: absolute; left: 45%">
                   <a id="placeholderImg" href="index.html"
                     ><img
@@ -39,11 +35,32 @@
                   /></a>
                 </li>
 
-                <!--right-->
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="aboutUs.html">About Us</a></li>
                 <li><a href="index.html">Home</a></li>
               </ul>
+            </div>
+          </div>
+        </header> -->
+
+        <header class="head">
+          <div class="navigation">
+            <a id="radioicon" href="index.html"
+              ><img src="Pictures/radioLogo.png" alt="Ruido Radio Icon"
+            /></a>
+
+            <nav class="nav">
+              <ul>
+                <li><a class="menuItem" href="index.html">Home</a></li>
+                <li><a class="menuItem" href="aboutUs.html">About Us</a></li>
+                <li><a class="menuItem" href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+
+            <div class="mobile-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
           </div>
         </header>
@@ -97,8 +114,15 @@
         <!--Footer (potential feature, may not implement)-->
         <footer>
           <div class="footerContainer"></div>
+
+          <div class="mobileMenuSystem">
+            
+          </div>
         </footer>
-      </div>
+
+      </div> <!-- showcase -->
+
+      <script type="text/javascript" src="nav.js"></script>
     </body>
   </main>
 </html>
